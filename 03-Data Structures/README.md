@@ -173,4 +173,13 @@ So for simplicity we can think of the last item here, the one that contains the 
 And the first item I added the one that contains zero. We can think of that as being at the end or the tail of the list.
 
 In the next part we traverse the list forwards and backwards. Whenever we arrive at the head element, we know that we have reached the end of the list.
+
 ### Queue
+A Queue is a list in which the first thing you add is the first thing that you remove. They are typically ised when we want to deal with things in a time based order. The things that are added to the queue early on have higher priority than the things that are added later on.
+They are also refered as FIFO structure, as in First In First Out.
+
+Queues are a very common data structurre in programming. An example would be the event queue maintained by the operating system. Thi is the queue that keeps track of keyboard or mouse events.
+
+
+## Stack
+The stack is a last in, first out structre. The las thing that is added is the first thing that is taken off it.
