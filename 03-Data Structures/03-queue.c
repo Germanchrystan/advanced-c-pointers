@@ -46,6 +46,28 @@ LISTITEM* dequeue()
   return temp;
 }
 
+int queue_length(LISTHDR* queue)
+{
+  LISTITEM *temp;
+  int length;
+
+  temp = queue-> first;
+  length = 0;
+  do 
+  {
+    // Check for an empty queue of if we have gone through the whole queue
+    if(temp == (LISTITEM*)queue)
+    { 
+      temp = NULL;
+      break;
+    }
+    temp = temp->next;
+    length = length + 1;
+  } while (temp != NULL);
+
+  return length;
+}
+
 int main()
 {
   LISTITEM *temp;

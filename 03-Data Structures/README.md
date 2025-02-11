@@ -183,3 +183,10 @@ Queues are a very common data structurre in programming. An example would be the
 
 ## Stack
 The stack is a last in, first out structre. The las thing that is added is the first thing that is taken off it.
+
+
+## Function pointer
+Up to now, we have looked at pointer to data of sonme sort, but we can alos have pointer s to functions. Function pointer are typically used when dealing with asynchronous events. For example we may want to call a certain function when an event fires, to signal that the funal focument in a printer queue has been printed. Or you may want to call a function when a specific mouse event occurs.
+
+While they may seem a bit obcure, and it is quite possible that we may never need to use them, they are useful in some special cases, and it is worth knowing about them.
+
