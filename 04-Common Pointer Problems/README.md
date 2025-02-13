@@ -10,4 +10,10 @@ When two lists contain the same elements, or rather pointers to the same element
 It is important to understand that there are two ways of making a copy of some data.
 - The first is to create a pointer to ta bit of existing data. That is called a **shallow copy**.
 There is one bit of data, but two pointers to it.
-- The second is to make a new copy of the data itself, and that is called a **deep copy**.
+- The second is to make a new copy of the data itself, and that is called a **deep copy**. 
+
+Shallow copies are typically fairly fast because no real copying is done. We are just creating a new reference, a pointer whose value is the address of some existing bit of data. Deep copying is crearly slower because we have to get at the original data and copy it to a new memory location.
+
+Shallow copies are pretty fast and efficient. They don't mess around with the original data, and they don't have to make new copies of it, but they are inherently unsafe. If we make changes to one copy, those changes can affect the other copy. Deep copies are safer.
+
+So when we make a deep copy, we end up with two completely separate sets of data which might be contained.
