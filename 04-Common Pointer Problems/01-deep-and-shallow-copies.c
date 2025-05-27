@@ -124,7 +124,7 @@ int main() {
   printf("the length of the shallow copy queue is %d\n", queue_length(&shallow_copy));
   temp = shallow_copy.first;
   do {
-    printf("data is deep copy queue is '%s' at address %p\n",temp->data, temp->data);
+    printf("data in shallow copy queue is '%s' at address %p\n",temp->data, temp->data);
     temp = temp->next;
   } while(temp->next != shallow_copy.first);
 
